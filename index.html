@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dyZ88mC6Up2uqS4h/K8aN5PimFuW2Doj8f5W3V99Emsl9sHqzGf4x2D3x0Ez8Z8vZVJ6xkT8DHf8QK1pX5aK2w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #fff;
+            overflow: hidden;
+        }
+
+        :root {
+            --btn-outline: #000;
+            --main-txt-clr: #000;
+        }
+
+        header {
+            border: 1px solid var(--btn-outline);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 54px;
+        }
+
+        nav {
+            border: 1px solid var(--btn-outline);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding-left: 8px;
+            padding-right: 8px;
+            width: 100%;
+            height: 100%;
+        }
+
+        nav .navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+        }
+
+        nav .navbar ul {
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav .navbar ul a {
+            border: 1px solid var(--btn-outline);
+            border-radius: 8px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 12px;
+            padding-right: 12px;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            color: var(--main-txt-clr);
+            transition: 0.6s ease-in-out;
+        }
+
+        nav .navbar ul a:hover {
+            background: #000;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo">Mohamad Al Mheimid</div>
+                
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-headset"></i>Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
